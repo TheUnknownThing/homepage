@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Wang Hanning</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        --bgcolor-outer: #f5f7fa;
+        /* --bgcolor-outer: #fff; */
+        --bgcolor: #fff;
+        --hr-color: #e5e7ea;
+        --color: #444;
+        --font-serif: "Libertinus Serif", serif;
+        --font-sans: "Libertinus Sans", sans;
+
+        background-color: var(--bgcolor-outer);
+        color: var(--color);
+        font-family: var(--font-serif);
+        hyphens: auto;
+        text-align: justify;
+        font-size: 1.125rem;
+      }
+      main {
+        margin: 2rem auto;
+        background-color: var(--bgcolor);
+        padding: 1rem 0 0.3rem;
+        max-width: 800px;
+        border-radius: 4px;
+      }
+      main > * {
+        padding: 0 1rem;
+      }
+      .name__family {
+        font-feature-settings: "smcp" on;
+      }
+      .hfill {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      a {
+        color: inherit !important;
+        text-decoration: none;
+      }
+      a:hover,
+      a:active,
+      a:focus {
+        text-decoration: underline;
+      }
+      section {
+        padding-top: 1rem;
+        padding-bottom: 0.8rem;
+      }
+      section:not(:last-child) {
+        border-bottom: 1px solid var(--hr-color);
+      }
+      section > ol {
+        list-style: none;
+      }
+      section > ol > li {
+        margin-top: 0.4rem;
+      }
+      section > ol > li:not(:last-child) {
+        margin-bottom: 0.4rem;
+      }
+      section > ul {
+        margin-top: 0.4rem;
+      }
+      section > h2 + p {
+        margin-top: 0.3rem;
+      }
+      section > ul + p {
+        margin-top: 0.25rem;
+      }
+      ul {
+        padding-inline-start: 1em;
+      }
+      ol ul {
+        list-style: disc;
+      }
+      ol ul ul {
+        list-style: circle;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--font-sans);
+        /* font-weight: normal; */
+        margin: 0.4rem 0;
+      }
+      h1 {
+        font-size: 1.9em;
+        margin: 0;
+        letter-spacing: -0.015625em;
+      }
+      h2 {
+        font-size: 1.3rem;
+        letter-spacing: -0.008333333em;
+      }
+      section > h2:first-child {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      strong {
+        font-family: var(--font-sans);
+      }
+
+      p,
+      li {
+        margin: 0.35rem 0;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        html {
+          --bgcolor-outer: #121212;
+          --bgcolor: rgba(255, 255, 255, 0.09);
+          --color: rgba(255, 255, 255, 0.87);
+          --hr-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+
+      @media print {
+        html {
+          --bgcolor-outer: #fff;
+          --bgcolor: #fff;
+          --color: #000;
+          --hr-color: rgba(0, 0, 0, 0);
+          font-size: 0.98rem;
+        }
+        main {
+          max-width: initial;
+          margin: 0;
+          padding-top: 0.3rem;
+        }
+        main > * {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        /* a {
+        text-decoration: underline;
+      } */
+        section {
+          padding-top: 0.6rem;
+          padding-bottom: 0.4rem;
+        }
+        section > ol > li:not(:last-child) {
+          margin: 0.3rem 0;
+        }
+      }
+
+      @media screen and (max-width: 799.9px) {
+        html {
+          text-align: initial;
+        }
+        main {
+          margin: 0;
+          border-radius: 0;
+          min-height: 100vh;
+        }
+        .hfill {
+          display: block;
+        }
+        .hfill > * {
+          display: block;
+        }
+      }
+      a:link::after,
+      a:visited::after {
+        content: " ";
+        margin-left: 0.2em;
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KPHBhdGggZmlsbD0iI2E0YTVhNyIgZD0iTTYgMWg1djVMOC44NiAzLjg1IDQuNyA4IDQgNy4zbDQuMTUtNC4xNkw2IDFaIE0yIDNoMnYxSDJ2Nmg2VjhoMXYyYTEgMSAwIDAgMS0xIDFIMmExIDEgMCAwIDEtMS0xVjRhMSAxIDAgMCAxIDEtMVoiLz4KPC9zdmc+Cg==")
+          no-repeat;
+      }
+      /* Libertinus Serif */
+      @font-face {
+        font-family: "Libertinus Serif";
+        src: url("./fonts/LibertinusSerif-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Libertinus Serif";
+        src: url("./fonts/LibertinusSerif-Italic.woff2") format("woff2");
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Libertinus Serif";
+        src: url("./fonts/LibertinusSerif-Bold.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* Libertinus Sans */
+      @font-face {
+        font-family: "Libertinus Sans";
+        src: url("./fonts/LibertinusSans-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Libertinus Sans";
+        src: url("./fonts/LibertinusSans-Bold.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Libertinus Sans";
+        src: url("./fonts/LibertinusSans-Italic.woff2") format("woff2");
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="titlebar hfill">
+        <h1 class="name">
+          <span class="name__family">Wang</span>
+          <span class="name__given">Hanning</span>
+        </h1>
+        <div
+          class="contact"
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.3rem;
+            font-size: 0.95rem;
+          "
+        >
+          <a href="mailto:theunknownthing@sjtu.edu.cn"
+            >theunknownthing@sjtu.edu.cn</a
+          >
+          <a href="https://theunknown.site">Blog: theunknown.site</a>
+          <a href="https://acm.sjtu.edu.cn/~theunknownthing/"
+            >acm.sjtu.edu.cn/~theunknownthing/</a
+          >
+        </div>
+      </section>
+      <section>
+        <h2>Profile</h2>
+        <p>
+          Undergraduate in the <strong>SJTU ACM Class (2024–Present)</strong> at
+          Shanghai Jiao Tong University. <br />
+          My current research focus is on
+          <strong>Large Language Models</strong>, especially their pre-training
+          and post-training. I actively keep up with the rapid developments in
+          the field and build side projects to learn new paradigms, protocols,
+          and programming languages.
+        </p>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <ol>
+          <li>
+            <p class="hfill">
+              <span>
+                <a
+                  href="https://www.sjtu.edu.cn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><strong>Shanghai Jiao Tong University</strong></a
+                >, B.S. Computer Science (ACM Class)
+              </span>
+              <span>2024 – Present</span>
+            </p>
+            <p>GPA: 3.9 / 4.3 &middot; Rank: 9 / 29</p>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2>Research Experience</h2>
+        <ol>
+          <li>
+            <p class="hfill">
+              <span
+                ><strong
+                  >GAIR Lab (<a href="https://plms.ai">plms.ai</a>)</strong
+                >, Research Intern (Advisor: Dr. Pengfei Liu)</span
+              >
+              <span>Summer 2025</span>
+            </p>
+            <p>
+              Researching Large Language Models with interests in
+              <em>mid-training</em> and <em>post-training</em> stages. Working
+              on providing efficient training data which incentivizes model's
+              agentic capabilities.
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2>Teaching Experience</h2>
+        <ol>
+          <li>
+            <p class="hfill">
+              <span
+                ><strong>Teaching Assistant</strong>, Programming (C++)
+                CS1951</span
+              >
+              <span>Fall 2025</span>
+            </p>
+            <ul>
+              <li>
+                Gave lectures on shell usage and Git workflows, and supported
+                students in hands-on sessions.
+              </li>
+              <li>
+                Provided an interactive learning platform (adapted from
+                pwn.college) with challenge-based exercises to reinforce shell
+                and Git concepts. Open-sourced our platform on:
+                <a
+                  href="https://github.com/RayZh-hs/acmdojo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >acmdojo</a
+                >
+                and
+                <a
+                  href="https://github.com/RayZh-hs/shell-dojo-core"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >shell-dojo-core</a
+                >.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2>Selected Projects</h2>
+        <ol>
+          <li>
+            <p class="hfill">
+              <span> <strong>Networking Systems</strong></span>
+              <span>Summer 2025</span>
+            </p>
+            <ul>
+              <li>
+                <strong
+                  ><a
+                    href="https://github.com/TheUnknownThing/Quic-Transproxy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Transparent QUIC Proxy</a
+                  ></strong
+                >: Implemented a proxy layer to handle QUIC session forwarding
+                and address translation.
+              </li>
+              <li>
+                <strong
+                  ><a
+                    href="https://github.com/RayZh-hs/neofrp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >NeoFRP</a
+                  ></strong
+                >: Built a lightweight reverse proxy (Fast Reverse Proxy style)
+                for tunneling internal services. 70% faster than original FRP in
+                throughput under same setting.
+              </li>
+              <li>
+                <strong>SOCKS5 Server with FullCone UDP</strong>: Added UDP
+                FullCone behavior for broader NAT traversal and improved
+                compatibility.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p class="hfill">
+              <span>
+                <strong
+                  ><a
+                    href="https://github.com/TheUnknownThing/RISC-V-Simulator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >RISC-V Simulator</a
+                  ></strong
+                >
+              </span>
+              <span>Summer 2025</span>
+            </p>
+            <p>
+              A RISC-V simulator (RV32-I) with Tomasulo algorithm for
+              out-of-order execution.
+            </p>
+          </li>
+          <li>
+            <p class="hfill">
+              <span>
+                <strong
+                  ><a
+                    href="https://github.com/TheUnknownThing/vscode-acmoj"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >vscode-acmoj</a
+                  ></strong
+                >
+              </span>
+              <span>Spring 2025</span>
+            </p>
+            <p>
+              A simple integration of ACMOJ into VSCode, which allows you to
+              browse problemsets (contests/homework), view problems, submit your
+              code, and check submission results without leaving your editor.
+            </p>
+          </li>
+        </ol>
+        <br />
+        <h3><em>Contributed</em></h3>
+        <ol>
+          <li>
+            <p class="hfill">
+              <span>
+                <strong
+                  ><a
+                    href="https://github.com/volcengine/verl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >volcengine/verl</a
+                  ></strong
+                >
+              </span>
+              <span></span>
+            </p>
+            <p>
+              verl: Volcano Engine Reinforcement Learning for LLMs
+              (contributed).
+            </p>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li><strong>Languages:</strong> C++, Python, TypeScript, Go</li>
+          <li>
+            <strong>Interests:</strong> Large Language Model mid-training &
+            post-training; networking protocols
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Selected Coursework</h2>
+        <ul>
+          <li>Mathematical Logic: 4.3 / 4.3</li>
+          <li>Great Ideas in Computer Science: 4.3 / 4.3</li>
+          <li>
+            Principle and Practice of Computer Algorithms (PPCA): 4.3 / 4.3
+          </li>
+          <li>Data Structure: 4.0 / 4.3</li>
+          <li>Mathematical Analysis: 4.0 / 4.3</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
