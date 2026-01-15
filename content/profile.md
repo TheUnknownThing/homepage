@@ -7,7 +7,6 @@ email: theunknownthing@sjtu.edu.cn
 github: theunknownthing
 twitter: Hanning__Wang
 cv: https://acm.sjtu.edu.cn/~theunknownthing
-avatar: assets/avatar.jpg
 updated: January 2026
 ---
 
