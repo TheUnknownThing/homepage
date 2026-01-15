@@ -1,50 +1,35 @@
 ---
 name: Hanning Wang
-tagline: Exploring the intersection of machine learning and human cognition.
+tagline: Stay hungry, stay foolish.
 title: Undergraduate Student @
 institution: SJTU ACM Class
 email: theunknownthing@sjtu.edu.cn
 github: theunknownthing
 twitter: Hanning__Wang
-scholar: https://scholar.google.com/citations?user=YOURID
+cv: https://acm.sjtu.edu.cn/~theunknownthing
 avatar: assets/avatar.jpg
 updated: January 2026
 ---
 
-I am a undergraduate student working on machine learning and natural language processing.
-My research aims to build systems that can understand and reason about language
-the way humans do.
+I am an undergraduate at Shanghai Jiao Tong University, majoring in Computer Science. I enjoy exploring different areas of programming & machine learning systems.
 
-## Research Interests
+In my spare time, I also work on projects that interest me, learning new programming languages along the way. I have experience in **C++**, **Python**, **TypeScript**, **Go**, **Rust**, and I am always eager to learn more.
 
-- **Machine Learning** — deep learning, representation learning, optimization
-- **Natural Language Processing** — language models, text generation, reasoning
-- **Human-AI Interaction** — interpretability, alignment, cognitive modeling
-- **Efficient Computing** — model compression, efficient inference
+Learning in the SJTU ACM Class has been an inspiring experience, surrounded by amazing peers and mentors. I believe in using technology to create meaningful solutions.
 
-## Selected Publications
+## Interests
 
-**Learning to Reason Over Long Contexts**  
-**Your Name**, Collaborator One, Collaborator Two  
-*NeurIPS 2025* · [paper](#) · [code](#)
+- **Machine Learning** — LLM training, reinforcement learning
+- **Networking** — transport protocols, proxy implementations, network optimization
+- **Systems Programming** — compilers, simulators, low-level optimization
 
-**Efficient Transformers for Document Understanding**  
-Collaborator One, **Your Name**, Collaborator Three  
-*ACL 2024* · [paper](#) · [code](#) · [demo](#)
+## Education
 
-**A Survey on Neural Text Generation**  
-**Your Name**, Collaborator Two  
-*arXiv 2024* · [paper](#)
-
-## News
-
-**2026.01** — Launched my new academic homepage  
-**2025.09** — Joined [Lab Name] as a PhD student  
-**2025.06** — Paper accepted to NeurIPS 2025
+[**Shanghai Jiao Tong University**](https://www.sjtu.edu.cn) 
+Undergraduate Student at [SJTU ACM Class](https://acm.sjtu.edu.cn) 2024.
 
 ## Navigate
 
-[Publications →](publications.html)  
-[Projects →](projects.html)  
-[Curriculum Vitae →](https://acm.sjtu.edu.cn/~theunknownthing)  
-[Blog & Notes →](https://theunknownth.ing/)
+- [CV →](https://acm.sjtu.edu.cn/~theunknownthing)
+- [Blog →](https://theunknownth.ing/)
+- [Projects →](projects.html)

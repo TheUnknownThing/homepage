@@ -47,6 +47,63 @@
         return { metadata, content: match[2] };
     }
 
+    // Wrap project sections (h3 + following content) in card divs
+    function wrapProjectCards() {
+        const container = document.querySelector('.markdown-content');
+        if (!container) return;
+
+        const children = Array.from(container.children);
+        let currentCard = null;
+        const fragment = document.createDocumentFragment();
+
+        for (let i = 0; i < children.length; i++) {
+            const el = children[i];
+            const tagName = el.tagName.toLowerCase();
+
+            // Skip hr elements (they were separators, now cards provide separation)
+            if (tagName === 'hr') {
+                continue;
+            }
+
+            // H2 marks a section header - close current card and add h2 directly
+            if (tagName === 'h2') {
+                if (currentCard) {
+                    fragment.appendChild(currentCard);
+                    currentCard = null;
+                }
+                fragment.appendChild(el);
+                continue;
+            }
+
+            // H3 starts a new project card
+            if (tagName === 'h3') {
+                if (currentCard) {
+                    fragment.appendChild(currentCard);
+                }
+                currentCard = document.createElement('div');
+                currentCard.className = 'project-card';
+                currentCard.appendChild(el);
+                continue;
+            }
+
+            // Other elements go into the current card or directly into fragment
+            if (currentCard) {
+                currentCard.appendChild(el);
+            } else {
+                fragment.appendChild(el);
+            }
+        }
+
+        // Don't forget the last card
+        if (currentCard) {
+            fragment.appendChild(currentCard);
+        }
+
+        // Replace container content
+        container.innerHTML = '';
+        container.appendChild(fragment);
+    }
+
     // Load and render content
     async function loadContent() {
         const contentPath = getContentPath();
@@ -77,6 +134,11 @@
             }
             
             document.getElementById('pageContent').innerHTML = pageHtml + `<div class="markdown-content">${html}</div>`;
+            
+            // For projects page, wrap each project section in a card
+            if (contentPath.includes('projects')) {
+                wrapProjectCards();
+            }
             
             // Set last updated
             if (metadata.updated) {
