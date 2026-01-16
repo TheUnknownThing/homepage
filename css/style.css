@@ -540,3 +540,104 @@ body {
     }
 }
 
+/* ================================================
+   Skeleton Loading Styles (Prevents CLS)
+   ================================================ */
+.skeleton-content {
+    animation: skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* Profile page skeleton */
+.skeleton-avatar {
+    float: right;
+    width: 165px;
+    height: 165px;
+    background: var(--color-accent-light);
+    border-radius: 4px;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.skeleton-name {
+    height: 3.5rem;
+    width: 60%;
+    background: var(--color-accent-light);
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+.skeleton-tagline {
+    height: 1.35rem;
+    width: 80%;
+    background: var(--color-accent-light);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.skeleton-affiliation {
+    height: 0.95rem;
+    width: 50%;
+    background: var(--color-accent-light);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.skeleton-links {
+    height: 1rem;
+    width: 70%;
+    background: var(--color-accent-light);
+    border-radius: 4px;
+}
+
+/* Subpage skeleton */
+.skeleton-title {
+    height: 2.5rem;
+    width: 40%;
+    background: var(--color-accent-light);
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.skeleton-description {
+    height: 1.1rem;
+    width: 70%;
+    background: var(--color-accent-light);
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+/* Body text skeleton */
+.skeleton-body {
+    margin-top: 2rem;
+}
+
+.skeleton-line {
+    height: 1rem;
+    width: 100%;
+    background: var(--color-accent-light);
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+.skeleton-line.short {
+    width: 60%;
+}
+
+/* Hide skeleton on mobile for avatar */
+@media (max-width: 600px) {
+    .skeleton-avatar {
+        float: none;
+        width: 100px;
+        height: 100px;
+        margin: 0 0 1rem 0;
+    }
+    
+    .skeleton-name {
+        height: 2.5rem;
+    }
+}

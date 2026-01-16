@@ -6,6 +6,7 @@
     <meta name="description" content="Publications">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
     <title>Publications</title>
@@ -33,7 +34,16 @@
             <a href="/">← Back to Home</a>
         </nav>
         <div class="page-content" id="pageContent">
-            <div class="loading"><p>Loading...</p></div>
+            <!-- Skeleton placeholder to prevent CLS -->
+            <div class="skeleton-content">
+                <div class="skeleton-title"></div>
+                <div class="skeleton-description"></div>
+                <div class="skeleton-body">
+                    <div class="skeleton-line"></div>
+                    <div class="skeleton-line"></div>
+                    <div class="skeleton-line short"></div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -41,7 +51,7 @@
         <p>Last updated: <span id="lastUpdated">—</span></p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="js/page.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="js/page.js"></script>
 </body>
 </html>

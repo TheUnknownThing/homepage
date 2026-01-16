@@ -171,8 +171,6 @@
         }
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        ThemeManager.init();
-        loadContent();
-    });
+    ThemeManager.init();
+    loadContent();
 })();
