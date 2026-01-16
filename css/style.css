@@ -2,6 +2,16 @@
    Academic Homepage - Minimal but Memorable
    ================================================ */
 
+/* Fallback font with adjusted metrics to prevent CLS */
+@font-face {
+    font-family: 'Inter-fallback';
+    src: local('BlinkMacSystemFont'), local('-apple-system'), local('Segoe UI'), local('Arial');
+    size-adjust: 107%;
+    ascent-override: 96%;
+    descent-override: 24%;
+    line-gap-override: 0%;
+}
+
 :root {
     /* Colors - Light Mode */
     --color-bg: #fafafa;
@@ -12,8 +22,8 @@
     --color-accent-light: #e8e8e8;
     --color-border: #e0e0e0;
     
-    /* Typography */
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    /* Typography - Uses fallback with matching metrics until Inter loads */
+    --font-sans: 'Inter', 'Inter-fallback', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-serif: 'Georgia', 'Times New Roman', serif;
 }
 
