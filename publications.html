@@ -15,7 +15,12 @@
     
     <script>
         (function() {
-            var theme = localStorage.getItem('theme-preference');
+            var theme = null;
+            try {
+                theme = localStorage.getItem('theme-preference');
+            } catch (e) {
+                // localStorage may be blocked in sandboxed environments
+            }
             if (!theme) {
                 theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
             }
@@ -33,7 +38,7 @@
 
     <main class="container">
         <nav class="page-nav">
-            <a href="/">← Back to Home</a>
+            <a href="./">← Back to Home</a>
         </nav>
         <div class="page-content" id="pageContent">
             <!-- Skeleton placeholder to prevent CLS -->

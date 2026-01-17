@@ -15,15 +15,28 @@
     // Theme Management
     // ================================================
     const ThemeManager = {
+        storageAvailable: (function() {
+            try {
+                localStorage.setItem('__test__', '__test__');
+                localStorage.removeItem('__test__');
+                return true;
+            } catch (e) {
+                return false;
+            }
+        })(),
+
         init() {
-            const savedTheme = localStorage.getItem(CONFIG.storageKey);
+            let savedTheme = null;
+            if (this.storageAvailable) {
+                savedTheme = localStorage.getItem(CONFIG.storageKey);
+            }
             const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
             const theme = savedTheme || (prefersDark ? 'dark' : 'light');
             this.setTheme(theme);
             this.bindToggle();
             
             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-                if (!localStorage.getItem(CONFIG.storageKey)) {
+                if (!this.storageAvailable || !localStorage.getItem(CONFIG.storageKey)) {
                     this.setTheme(e.matches ? 'dark' : 'light');
                 }
             });
@@ -31,7 +44,13 @@
 
         setTheme(theme) {
             document.documentElement.setAttribute('data-theme', theme);
-            localStorage.setItem(CONFIG.storageKey, theme);
+            if (this.storageAvailable) {
+                try {
+                    localStorage.setItem(CONFIG.storageKey, theme);
+                } catch (e) {
+                    // Storage unavailable, theme won't persist
+                }
+            }
         },
 
         toggle() {
