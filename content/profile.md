@@ -6,7 +6,7 @@ institution: SJTU ACM Class
 email: theunknownthing@sjtu.edu.cn
 github: theunknownthing
 twitter: Hanning__Wang
-cv: /cv
+cv: ./cv
 updated: January 2026
 ---
 
@@ -29,6 +29,6 @@ Undergraduate Student at [SJTU ACM Class](https://acm.sjtu.edu.cn) 2024.
 
 ## Navigate
 
-- [CV →](/cv)
+- [CV →](./cv)
 - [Blog →](https://theunknownth.ing/)
 - [Projects →](projects.html)

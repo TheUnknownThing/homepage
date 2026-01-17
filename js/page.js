@@ -8,8 +8,21 @@
 
     // Theme Management (same as main.js)
     const ThemeManager = {
+        storageAvailable: (function() {
+            try {
+                localStorage.setItem('__test__', '__test__');
+                localStorage.removeItem('__test__');
+                return true;
+            } catch (e) {
+                return false;
+            }
+        })(),
+
         init() {
-            const saved = localStorage.getItem('theme-preference');
+            let saved = null;
+            if (this.storageAvailable) {
+                saved = localStorage.getItem('theme-preference');
+            }
             const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
             this.setTheme(saved || (prefersDark ? 'dark' : 'light'));
             
@@ -18,7 +31,13 @@
         },
         setTheme(theme) {
             document.documentElement.setAttribute('data-theme', theme);
-            localStorage.setItem('theme-preference', theme);
+            if (this.storageAvailable) {
+                try {
+                    localStorage.setItem('theme-preference', theme);
+                } catch (e) {
+                    // Storage unavailable
+                }
+            }
         },
         toggle() {
             const current = document.documentElement.getAttribute('data-theme');
