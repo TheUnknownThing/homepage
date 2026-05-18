@@ -1,7 +1,7 @@
 ---
 title: Projects
 description: Selected research and open-source projects.
-updated: January 2026
+updated: May 2026
 ---
 
 ## Open Source
@@ -29,7 +29,7 @@ A simple integration of ACMOJ into VSCode, which allows you to browse problemset
 ### RCompiler
 **[GitHub](https://github.com/theunknownthing/RCompiler)** · **[Spec](https://github.com/peterzheng98/RCompiler-Spec)**
 
-A compiler designed for the subset of Rust.
+A C++ implementation of a compiler for a subset of the Rust programming language, with advanced IR optimizations including mem2reg, SCCP, ADCE, strength reduction, and function inlining. Developed across Fall 2025 and Spring 2026.
 
 *Technologies: C++*
 
@@ -47,9 +47,9 @@ A QUIC implementation of transparent proxy.
 ### R10K-CPU
 **[GitHub](https://github.com/theunknownthing/R10K-CPU)**
 
-An RV32IM CPU (with MIPS R10K like OoO).
+An RV32I CPU with MIPS R10K-like out-of-order execution, implemented with [assassyn](https://github.com/synthesys-lab/assassyn). This was a course project for Computer Systems (Fall 2025) at Shanghai Jiao Tong University, developed by Zhaoyuan Wan and Hanning Wang.
 
-*Technologies: Python (HDL) with generated SystemVerilog*
+*Technologies: assassyn, RISC-V, Out-of-Order CPU*
 
 ---
 
@@ -59,5 +59,3 @@ An RV32IM CPU (with MIPS R10K like OoO).
 **[GitHub](https://github.com/volcengine/verl)** · ⭐ 18.4k · *contributor*
 
 verl: Volcano Engine Reinforcement Learning for LLMs
-
-

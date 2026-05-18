@@ -66,8 +66,8 @@
         return { metadata, content: match[2] };
     }
 
-    // Wrap project sections (h3 + following content) in card divs
-    function wrapProjectCards() {
+    // Wrap content sections (h3 + following content) in card divs
+    function wrapContentCards() {
         const container = document.querySelector('.markdown-content');
         if (!container) return;
 
@@ -94,7 +94,7 @@
                 continue;
             }
 
-            // H3 starts a new project card
+            // H3 starts a new content card
             if (tagName === 'h3') {
                 if (currentCard) {
                     fragment.appendChild(currentCard);
@@ -154,9 +154,9 @@
             
             document.getElementById('pageContent').innerHTML = pageHtml + `<div class="markdown-content">${html}</div>`;
             
-            // For projects page, wrap each project section in a card
-            if (contentPath.includes('projects')) {
-                wrapProjectCards();
+            // For list pages, wrap each item section in a card
+            if (contentPath.includes('projects') || contentPath.includes('publications')) {
+                wrapContentCards();
             }
             
             // Set last updated

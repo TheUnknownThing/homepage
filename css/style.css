@@ -161,7 +161,7 @@ body {
 
 .avatar {
     width: 165px;
-    height: 165px;
+    height: 190px;
     border-radius: 4px;
     object-fit: cover;
     filter: grayscale(20%);
@@ -534,7 +534,7 @@ body {
     
     .avatar {
         width: 100px;
-        height: 100px;
+        height: 115px;
     }
     
     .contact-links {
