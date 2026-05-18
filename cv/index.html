@@ -118,6 +118,26 @@
       li {
         margin: 0.35rem 0;
       }
+      .projects-section > ol > li {
+        margin-top: 0.75rem;
+        padding-top: 0.65rem;
+      }
+      .projects-section > ol > li:not(:first-child) {
+        border-top: 0.5px solid var(--hr-color);
+      }
+      .projects-section > ol > li:first-child {
+        padding-top: 0;
+      }
+      .projects-section > ol > li:not(:last-child) {
+        margin-bottom: 0.75rem;
+      }
+      .projects-section > ol > li > .hfill {
+        margin-bottom: 0.45rem;
+      }
+      .projects-section > ol > li > p:last-child,
+      .projects-section > ol > li > ul:last-child {
+        margin-bottom: 0;
+      }
 
       @media (prefers-color-scheme: dark) {
         html {
@@ -399,7 +419,7 @@
           </li>
         </ol>
       </section>
-      <section>
+      <section class="projects-section">
         <h2>Selected Projects</h2>
         <ol>
           <li>
