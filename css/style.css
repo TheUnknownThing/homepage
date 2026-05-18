@@ -319,6 +319,23 @@ body {
     border-bottom-color: var(--color-text);
 }
 
+.inline-arrow-icon {
+    width: 0.95em;
+    height: 0.95em;
+    margin-left: 0.25em;
+    vertical-align: -0.12em;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.inline-arrow-icon--left {
+    margin-left: 0;
+    margin-right: 0.35em;
+}
+
 /* Navigate section - horizontal flex layout for links */
 .markdown-content h2:last-of-type + ul,
 .markdown-content h2:last-of-type + p + ul {
@@ -404,6 +421,8 @@ body {
     color: var(--color-text-muted);
     text-decoration: none;
     font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
     transition: color 0.15s;
 }
 

@@ -35,7 +35,9 @@ Undergraduate Student at [SJTU ACM Class](https://acm.sjtu.edu.cn) 2024.
 
 ## Navigate
 
-- [CV →](./cv)
-- [Publications →](publications.html)
-- [Blog →](https://theunknownth.ing/)
-- [Projects →](projects.html)
+<ul class="profile-nav">
+  <li><a href="./cv">CV <svg class="inline-arrow-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></li>
+  <li><a href="publications.html">Publications <svg class="inline-arrow-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></li>
+  <li><a href="https://theunknownth.ing/">Blog <svg class="inline-arrow-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></li>
+  <li><a href="projects.html">Projects <svg class="inline-arrow-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></li>
+</ul>

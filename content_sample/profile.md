@@ -43,6 +43,6 @@ Collaborator One, **Your Name**, Collaborator Three
 
 ## Navigate
 
-[Curriculum Vitae →](/cv)  
-[Research Projects →](/projects)  
-[Blog & Notes →](/blog)
+[Curriculum Vitae](/cv)  
+[Research Projects](/projects)  
+[Blog & Notes](/blog)
