@@ -128,7 +128,7 @@
         const contentPath = getContentPath();
         
         try {
-            const response = await fetch(contentPath);
+            const response = await fetch(contentPath, { cache: 'no-store' });
             if (!response.ok) throw new Error('Not found');
             
             const raw = await response.text();

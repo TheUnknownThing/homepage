@@ -9,4 +9,4 @@ updated: May 2026
 
 Ji Zeng, Dayuan Fu, Tiantian Mi, Yumin Zhuang, Yaxing Huang, Xuefeng Li, Lyumanshan Ye, Muhang Xie, Qishuo Hua, Zhen Huang, Mohan Jiang, **Hanning Wang**, Jifan Lin, Yang Xiao, Jie Sun, Yunze Wu, Pengfei Liu.
 
-*ICML'26 Spotlight. January 26, 2026.*
+*ICML'26 Spotlight.*

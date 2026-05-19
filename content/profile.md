@@ -11,11 +11,9 @@ avatar: assets/avatar.jpg
 updated: May 2026
 ---
 
-I am an undergraduate in the ACM Honors Class at Shanghai Jiao Tong University, majoring in Computer Science. My primary interest lies in **systems infrastructure for machine learning** — understanding how large-scale training and inference workloads interact with hardware, and designing better abstractions at that interface.
+I am an undergraduate in the ACM Honors Class at Shanghai Jiao Tong University, majoring in Computer Science. My primary interest lies in **systems infrastructure for machine learning**.
 
-I care about problems where systems thinking meets real-world constraints: communication-efficient distributed training, memory-aware scheduling, and the co-design of software stacks with emerging hardware. I want to **design the abstraction and build infrastructure** that makes the next generation of ML workloads practical.
-
-I have hands-on experience in **C++**, **Rust**, **Go**, **Python**, and **TypeScript**, with a focus on systems-level programming. I have worked on projects spanning compilers, CPU designs, network transport protocols, and LLM training pipelines. To learn more, see Project page below!
+I care about problems where systems thinking meets real-world constraints: communication-efficient distributed training, scheduling, and the co-design of software stacks with emerging hardware. I want to **design the abstraction and build infrastructure** that makes the next generation of ML workloads practical.
 
 ## Research Interests
 

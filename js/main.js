@@ -168,7 +168,7 @@
     // ================================================
     async function loadContent() {
         try {
-            const response = await fetch(CONFIG.contentPath);
+            const response = await fetch(CONFIG.contentPath, { cache: 'no-store' });
             if (!response.ok) throw new Error('Failed to load');
             
             const raw = await response.text();
