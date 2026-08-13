@@ -41,8 +41,18 @@
       }
       .hfill {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .hfill > :first-child {
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+      .hfill > :last-child {
+        flex: 0 0 auto;
+        margin-left: auto;
+        text-align: right;
+        white-space: nowrap;
       }
       a {
         color: inherit !important;
@@ -119,8 +129,8 @@
         margin: 0.35rem 0;
       }
       .projects-section > ol > li {
-        margin-top: 0.75rem;
-        padding-top: 0.65rem;
+        margin-top: 0.45rem;
+        padding-top: 0.35rem;
       }
       .projects-section > ol > li:not(:first-child) {
         border-top: 0.5px solid var(--hr-color);
@@ -129,13 +139,33 @@
         padding-top: 0;
       }
       .projects-section > ol > li:not(:last-child) {
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.45rem;
       }
       .projects-section > ol > li > .hfill {
-        margin-bottom: 0.45rem;
+        margin-bottom: 0.3rem;
       }
       .projects-section > ol > li > p:last-child,
       .projects-section > ol > li > ul:last-child {
+        margin-bottom: 0;
+      }
+      .experience-section > ol > li {
+        margin-top: 0.45rem;
+        padding-top: 0.35rem;
+      }
+      .experience-section > ol > li:not(:first-child) {
+        border-top: 0.5px solid var(--hr-color);
+      }
+      .experience-section > ol > li:first-child {
+        padding-top: 0;
+      }
+      .experience-section > ol > li:not(:last-child) {
+        margin-bottom: 0.45rem;
+      }
+      .experience-section > ol > li > .hfill {
+        margin-bottom: 0.3rem;
+      }
+      .experience-section > ol > li > p:last-child,
+      .experience-section > ol > li > ul:last-child {
         margin-bottom: 0;
       }
 
@@ -281,14 +311,13 @@
           Undergraduate in the
           <strong>ACM Honors Class (2024–Present)</strong> at Shanghai Jiao
           Tong University, majoring in Computer Science. My primary interest is
-          <strong>systems infrastructure for machine learning</strong>, with a
-          focus on distributed training, memory and communication optimization,
-          and hardware-software co-design.
+          <strong>systems infrastructure for LLM training</strong>.
         </p>
         <p>
-          I have hands-on experience in C++, Rust, Go, Python, and TypeScript,
-          and have worked on compilers, CPU designs, network transport
-          protocols, and LLM training pipelines.
+          I have <strong>built and optimized training infrastructure for
+          thousands of GPUs</strong>,
+          <strong>crawled pretraining and midtraining data at scale</strong>,
+          and developed <strong>efficient data-processing pipelines</strong>.
         </p>
       </section>
       <section>
@@ -310,9 +339,35 @@
           </li>
         </ol>
       </section>
-      <section>
+      <section class="experience-section">
         <h2>Research Experience</h2>
         <ol>
+          <li>
+            <p class="hfill">
+              <span
+                ><strong
+                  >Shanghai Innovation Institute (<a href="https://sii.edu.cn"
+                    >sii.edu.cn</a
+                  >)</strong
+                >, Research Intern (Co-advised by Dr. Pengfei Liu and Dr. Siyuan
+                Feng)</span
+              >
+              <span>Summer 2026&ndash;Present</span>
+            </p>
+            <p>Building efficient infrastructure for large-scale LLM pretraining.</p>
+            <ul>
+              <li>
+                <strong>Built and optimized training infrastructure for
+                thousands of GPUs.</strong>
+              </li>
+              <li>
+                <strong>Crawled LLM pretraining and midtraining data at scale.</strong>
+              </li>
+              <li>
+                <strong>Developed efficient data-processing pipelines.</strong>
+              </li>
+            </ul>
+          </li>
           <li>
             <p class="hfill">
               <span
@@ -364,9 +419,40 @@
           </li>
         </ol>
       </section>
-      <section>
+      <section class="experience-section">
         <h2>Teaching Experience</h2>
         <ol>
+          <li>
+            <p class="hfill">
+              <span
+                ><strong
+                  >PPCA Networking</strong
+                >, Track Lead (<a
+                  href="https://github.com/ACMClassCourse-2025/PPCA-Networking"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >course repository</a
+                >)</span
+              >
+              <span>Summer 2026</span>
+            </p>
+            <ul>
+              <li>
+                <strong>Led the PPCA networking track</strong> and coordinated
+                its course delivery.
+              </li>
+              <li>
+                <strong>Designed and scaffolded a more diverse set of lab
+                projects</strong>, including QUIC congestion control and
+                MiniCaddy.
+              </li>
+              <li>
+                <strong>Led a hands-on session on vibe coding</strong>,
+                introducing students to AI-assisted programming workflows and
+                fundamentals.
+              </li>
+            </ul>
+          </li>
           <li>
             <p class="hfill">
               <span
@@ -573,8 +659,9 @@
         <ul>
           <li><strong>Languages:</strong> C++, Rust, Python, TypeScript, Go</li>
           <li>
-            <strong>Interests:</strong> Large Language Model mid-training &
-            post-training; networking protocols
+            <strong>Interests:</strong> Large-scale LLM pretraining
+            infrastructure; distributed training; data systems; model
+            deployment and post-processing; networking protocols
           </li>
         </ul>
       </section>

@@ -1,25 +1,25 @@
 ---
 name: Hanning Wang
-tagline: Stay hungry, stay foolish.
-title: Undergraduate Student @
+tagline: Building efficient infrastructure for large-scale LLM training.
+title: Undergrad @
 institution: SJTU ACM Class
 email: theunknownthing@sjtu.edu.cn
 github: theunknownthing
 twitter: Hanning__Wang
 cv: ./cv
 avatar: assets/avatar.jpg
-updated: May 2026
+updated: August 2026
 ---
 
-I am an undergraduate in the ACM Honors Class at Shanghai Jiao Tong University, majoring in Computer Science. My primary interest lies in **systems infrastructure for machine learning**.
+I am an undergraduate in the ACM Honors Class at Shanghai Jiao Tong University, majoring in Computer Science, and a research intern at the [Shanghai Innovation Institute](https://sii.edu.cn), co-advised by Dr. Pengfei Liu and Dr. Siyuan Feng. My primary interest lies in **efficient systems infrastructure for large-scale LLM pretraining**.
 
-I care about problems where systems thinking meets real-world constraints: communication-efficient distributed training, scheduling, and the co-design of software stacks with emerging hardware. I want to **design the abstraction and build infrastructure** that makes the next generation of ML workloads practical.
+My current work focuses on building infrastructure for LLM pretraining workloads at scale. I have experience **building and optimizing training infrastructure for thousands of GPUs**, **crawling pretraining and midtraining data at scale**, and **developing efficient data-processing pipelines**.
 
-I have hands-on experience in **C++**, **Rust**, **Go**, **Python**, and **TypeScript**, with a focus on systems-level programming. I have worked on projects spanning compilers, CPU designs, network transport protocols, and LLM training pipelines. To learn more, see Project page below!
+I care about problems where systems thinking meets real-world constraints: communication-efficient distributed training, scheduling, and the co-design of software stacks with emerging hardware. I have hands-on experience in **C++**, **Rust**, **Go**, **Python**, and **TypeScript**, with a focus on systems-level programming. I have worked on projects spanning compilers, CPU designs, network transport protocols, and LLM training pipelines. To learn more, see the Projects page below!
 
 ## Research Interests
 
-- **ML Systems** — distributed training infrastructure, memory and communication optimization, hardware-software co-design
+- **ML Systems** — large-scale LLM pretraining infrastructure, distributed training, data systems, model deployment and post-processing
 - **Systems** — compiler backends, network transport, CPU design, low-level performance engineering
 
 ## Education
