@@ -11,7 +11,7 @@ avatar: assets/avatar.jpg
 updated: August 2026
 ---
 
-I am an undergraduate in the ACM Honors Class at Shanghai Jiao Tong University, majoring in Computer Science, and a research intern at the [Shanghai Innovation Institute](https://sii.edu.cn), co-advised by Dr. Pengfei Liu and Dr. Siyuan Feng. My primary interest lies in **efficient systems infrastructure for large-scale LLM pretraining**.
+I am an undergraduate in the [ACM Honors Class](https://acm.sjtu.edu.cn) at [Shanghai Jiao Tong University](https://www.sjtu.edu.cn), majoring in Computer Science, and a research intern at the [Shanghai Innovation Institute](https://sii.edu.cn), co-advised by [Dr. Pengfei Liu](https://scholar.google.com/citations?user=oIz_CYEAAAAJ&hl=en) and [Dr. Siyuan Feng](https://syfeng.net). My primary interest lies in **efficient systems infrastructure for large-scale LLM pretraining**.
 
 My current work focuses on building infrastructure for LLM pretraining workloads at scale. I have experience **building and optimizing training infrastructure for thousands of GPUs**, **crawling pretraining and midtraining data at scale**, and **developing efficient data-processing pipelines**.
 
@@ -26,6 +26,48 @@ I care about problems where systems thinking meets real-world constraints: commu
 
 [**Shanghai Jiao Tong University**](https://www.sjtu.edu.cn) 
 Undergraduate Student at [SJTU ACM Class](https://acm.sjtu.edu.cn) 2024.
+
+## Research Experience
+
+<div class="research-experience-list">
+  <div class="research-experience">
+    <a class="research-experience-logo" href="https://sii.edu.cn" aria-label="Shanghai Innovation Institute">
+      <img src="assets/sii-icon.png" alt="Shanghai Innovation Institute logo">
+    </a>
+    <div class="research-experience-content">
+      <div class="research-experience-heading">
+        <div>
+          <strong><a href="https://sii.edu.cn">Shanghai Innovation Institute</a></strong>
+          <span class="research-experience-role">Research Intern</span>
+        </div>
+        <span class="research-experience-date">Summer 2026&ndash;Present</span>
+      </div>
+      <p class="research-experience-advisors">Co-advised by <a href="https://scholar.google.com/citations?user=oIz_CYEAAAAJ&amp;hl=en">Dr. Pengfei Liu</a> and <a href="https://syfeng.net">Dr. Siyuan Feng</a>.</p>
+      <p>Building efficient infrastructure for large-scale LLM pretraining.</p>
+      <ul>
+        <li><strong>Built and optimized training infrastructure for thousands of GPUs.</strong></li>
+        <li><strong>Crawled LLM pretraining and midtraining data at scale.</strong></li>
+        <li><strong>Developed efficient data-processing pipelines.</strong></li>
+      </ul>
+    </div>
+  </div>
+  <div class="research-experience">
+    <a class="research-experience-logo" href="https://plms.ai" aria-label="GAIR Lab">
+      <img src="assets/sjtu-logo.svg" alt="Shanghai Jiao Tong University logo">
+    </a>
+    <div class="research-experience-content">
+      <div class="research-experience-heading">
+        <div>
+          <strong><a href="https://plms.ai">GAIR Lab</a></strong>
+          <span class="research-experience-role">Research Intern</span>
+        </div>
+        <span class="research-experience-date">Summer 2025</span>
+      </div>
+      <p class="research-experience-advisors">Advised by <a href="https://scholar.google.com/citations?user=oIz_CYEAAAAJ&amp;hl=en">Dr. Pengfei Liu</a>.</p>
+      <p>Researched LLM mid-training and post-training, focusing on efficient training data that improves agentic capabilities.</p>
+    </div>
+  </div>
+</div>
 
 ## Publications
 

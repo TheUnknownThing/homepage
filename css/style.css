@@ -234,6 +234,101 @@ body {
     color: var(--color-text);
 }
 
+/* Research experience */
+.research-experience-list {
+    display: grid;
+}
+
+.research-experience {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 0.9rem;
+    align-items: start;
+}
+
+.research-experience + .research-experience {
+    margin-top: 0.7rem;
+    padding-top: 0.7rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.research-experience-logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-top: 0.15rem;
+}
+
+.research-experience-logo img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.research-experience-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.research-experience-heading > div {
+    min-width: 0;
+}
+
+.research-experience-role {
+    display: block;
+    margin-top: 0.1rem;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+.research-experience-date {
+    flex: none;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.markdown-content .research-experience p {
+    margin: 0.45rem 0 0;
+}
+
+.markdown-content .research-experience-advisors {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+.markdown-content .research-experience ul {
+    margin: 0.55rem 0 0;
+}
+
+@media (max-width: 520px) {
+    .research-experience {
+        grid-template-columns: 40px minmax(0, 1fr);
+        gap: 0.75rem;
+    }
+
+    .research-experience-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .research-experience-heading {
+        display: block;
+    }
+
+    .research-experience-date {
+        display: block;
+        margin-top: 0.15rem;
+    }
+}
+
 .markdown-content code {
     font-family: 'SF Mono', 'Fira Code', monospace;
     font-size: 0.85em;
