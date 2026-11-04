@@ -205,6 +205,10 @@
         section > ol > li:not(:last-child) {
           margin: 0.3rem 0;
         }
+        h2,
+        h3 {
+          break-after: avoid;
+        }
       }
 
       @media screen and (max-width: 799.9px) {
@@ -322,14 +326,9 @@
             target="_blank"
             rel="noopener noreferrer"
             >Shanghai Jiao Tong University</a
-          >, majoring in Computer Science. My primary interest is
-          <strong>systems infrastructure for LLM training</strong>.
-        </p>
-        <p>
-          I have <strong>built and optimized training infrastructure for
-          thousands of GPUs</strong>,
-          <strong>crawled pretraining and midtraining data at scale</strong>,
-          and developed <strong>efficient data-processing pipelines</strong>.
+          >, working on <strong>data and systems for large-scale LLM
+          pretraining</strong>, including data acquisition, processing, and
+          synthesis, and efficient long-context training.
         </p>
       </section>
       <section>
@@ -385,17 +384,48 @@
               >
               <span>Summer 2026&ndash;Present</span>
             </p>
-            <p>Building efficient infrastructure for large-scale LLM pretraining.</p>
+            <p>
+              Building pretraining data pipelines and training infrastructure
+              for thousands of GPUs, with contributions to
+              <a
+                href="https://github.com/GAIR-NLP/801-30B"
+                target="_blank"
+                rel="noopener noreferrer"
+                >801-30B-A3B-Base</a
+              >, a 30B-parameter MoE model trained from scratch on 11.8T tokens.
+            </p>
             <ul>
               <li>
-                <strong>Built and optimized training infrastructure for
-                thousands of GPUs.</strong>
+                <strong>Attention-balanced sampling:</strong> Implemented a
+                sampler that balances attention workloads across data-parallel
+                ranks, achieving 2.26&times; training throughput with 256K
+                context; authored
+                <a
+                  href="https://github.com/GAIR-NLP/801-30B/blob/main/report.pdf#page=22"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >&sect;7.1 of the technical report</a
+                >.
               </li>
               <li>
-                <strong>Crawled LLM pretraining and midtraining data at scale.</strong>
+                <strong>Data acquisition and retrieval:</strong> Crawled
+                hundreds of terabytes of raw PDF data and helped scale the
+                midtraining data retrieval pipeline.
               </li>
               <li>
-                <strong>Developed efficient data-processing pipelines.</strong>
+                <strong>Data processing and synthesis:</strong> Built PDF and
+                code data processing and retrieval pipelines, and
+                capability-oriented data synthesis pipelines.
+              </li>
+              <li>
+                <strong>Training infrastructure:</strong> Optimized context
+                parallelism and developed faster training kernels. Worked
+                closely with the pretraining team to investigate training
+                issues and implement features.
+              </li>
+              <li>
+                <strong>Vision-language training:</strong> Contributed
+                dataloader and model support and reviewed related pull requests.
               </li>
             </ul>
           </li>
@@ -429,8 +459,30 @@
         </ol>
       </section>
       <section>
-        <h2>Publications</h2>
+        <h2>Publications &amp; Technical Reports</h2>
         <ol>
+          <li>
+            <p>
+              <strong
+                ><a
+                  href="https://github.com/GAIR-NLP/801-30B/blob/main/report.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >No Second Run: Does RSI Stop at Frontier Pre-training?</a
+                ></strong
+              >
+            </p>
+            <p>SII &amp; Xinxu AI (<strong>Hanning Wang</strong>, contributor).</p>
+            <p>
+              <em>Technical report, 2026.</em>
+              <a
+                href="https://github.com/GAIR-NLP/801-30B"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Project</a
+              >.
+            </p>
+          </li>
           <li>
             <p>
               <strong
@@ -701,9 +753,9 @@
         <ul>
           <li><strong>Languages:</strong> C++, Rust, Python, TypeScript, Go</li>
           <li>
-            <strong>Interests:</strong> Large-scale LLM pretraining
-            infrastructure; distributed training; data systems; model
-            deployment and post-processing; networking protocols
+            <strong>Interests:</strong> LLM pretraining data and systems;
+            capability-oriented data synthesis; distributed training;
+            performance optimization; networking protocols
           </li>
         </ul>
       </section>

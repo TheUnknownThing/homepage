@@ -1,6 +1,6 @@
 ---
 name: Hanning Wang
-tagline: Building efficient infrastructure for large-scale LLM training.
+tagline: Building data pipelines and systems for large-scale LLM pretraining.
 title: Undergrad @
 institution: SJTU ACM Class
 email: theunknownthing@sjtu.edu.cn
@@ -8,24 +8,12 @@ github: theunknownthing
 twitter: Hanning__Wang
 cv: ./cv
 avatar: assets/avatar.jpg
-updated: August 2026
+updated: November 2026
 ---
 
-I am an undergraduate in the [ACM Honors Class](https://acm.sjtu.edu.cn) at [Shanghai Jiao Tong University](https://www.sjtu.edu.cn), majoring in Computer Science, and a research intern at the [Shanghai Innovation Institute](https://sii.edu.cn), co-advised by [Dr. Pengfei Liu](https://scholar.google.com/citations?user=oIz_CYEAAAAJ&hl=en) and [Dr. Siyuan Feng](https://syfeng.net). My primary interest lies in **efficient systems infrastructure for large-scale LLM pretraining**.
+I am an undergraduate in the [ACM Honors Class](https://acm.sjtu.edu.cn) at [Shanghai Jiao Tong University](https://www.sjtu.edu.cn) and a research intern at the [Shanghai Innovation Institute](https://sii.edu.cn), co-advised by [Dr. Pengfei Liu](https://scholar.google.com/citations?user=oIz_CYEAAAAJ&hl=en) and [Dr. Siyuan Feng](https://syfeng.net). I work on **data and systems for large-scale LLM pretraining**.
 
-My current work focuses on building infrastructure for LLM pretraining workloads at scale. I have experience **building and optimizing training infrastructure for thousands of GPUs**, **crawling pretraining and midtraining data at scale**, and **developing efficient data-processing pipelines**.
-
-I care about problems where systems thinking meets real-world constraints: communication-efficient distributed training, scheduling, and the co-design of software stacks with emerging hardware. I have hands-on experience in **C++**, **Rust**, **Go**, **Python**, and **TypeScript**, with a focus on systems-level programming. I have worked on projects spanning compilers, CPU designs, network transport protocols, and LLM training pipelines. To learn more, see the Projects page below!
-
-## Research Interests
-
-- **ML Systems** — large-scale LLM pretraining infrastructure, distributed training, data systems, model deployment and post-processing
-- **Systems** — compiler backends, network transport, CPU design, low-level performance engineering
-
-## Education
-
-[**Shanghai Jiao Tong University**](https://www.sjtu.edu.cn) 
-Undergraduate Student at [SJTU ACM Class](https://acm.sjtu.edu.cn) 2024.
+I contributed to [**801-30B-A3B-Base**](https://github.com/GAIR-NLP/801-30B), a 30B-parameter mixture-of-experts model trained from scratch on 11.8T tokens. My work spans large-scale data acquisition and processing, retrieval and synthesis, and efficient long-context training. See our [technical report](https://github.com/GAIR-NLP/801-30B/blob/main/report.pdf).
 
 ## Research Experience
 
@@ -43,11 +31,13 @@ Undergraduate Student at [SJTU ACM Class](https://acm.sjtu.edu.cn) 2024.
         <span class="research-experience-date">Summer 2026&ndash;Present</span>
       </div>
       <p class="research-experience-advisors">Co-advised by <a href="https://scholar.google.com/citations?user=oIz_CYEAAAAJ&amp;hl=en">Dr. Pengfei Liu</a> and <a href="https://syfeng.net">Dr. Siyuan Feng</a>.</p>
-      <p>Building efficient infrastructure for large-scale LLM pretraining.</p>
+      <p>Building pretraining data pipelines and training infrastructure for thousands of GPUs, with contributions to <a href="https://github.com/GAIR-NLP/801-30B">801-30B-A3B-Base</a>.</p>
       <ul>
-        <li><strong>Built and optimized training infrastructure for thousands of GPUs.</strong></li>
-        <li><strong>Crawled LLM pretraining and midtraining data at scale.</strong></li>
-        <li><strong>Developed efficient data-processing pipelines.</strong></li>
+        <li><strong>Attention-balanced sampling:</strong> Implemented a sampler that balances attention workloads across data-parallel ranks, achieving 2.26&times; training throughput with 256K context; authored <a href="https://github.com/GAIR-NLP/801-30B/blob/main/report.pdf#page=22">&sect;7.1 of the technical report</a>.</li>
+        <li><strong>Data acquisition and retrieval:</strong> Crawled hundreds of terabytes of raw PDF data and helped scale the midtraining data retrieval pipeline.</li>
+        <li><strong>Data processing and synthesis:</strong> Built PDF and code data processing and retrieval pipelines, and capability-oriented data synthesis pipelines.</li>
+        <li><strong>Training infrastructure:</strong> Optimized context parallelism and developed faster training kernels. Worked closely with the pretraining team to investigate training issues and implement features.</li>
+        <li><strong>Vision-language training:</strong> Contributed dataloader and model support and reviewed related pull requests.</li>
       </ul>
     </div>
   </div>
@@ -69,7 +59,11 @@ Undergraduate Student at [SJTU ACM Class](https://acm.sjtu.edu.cn) 2024.
   </div>
 </div>
 
-## Publications
+## Publications & Technical Reports
+
+- **No Second Run: Does RSI Stop at Frontier Pre-training?**
+  SII & Xinxu AI (**Hanning Wang**, contributor).
+  *Technical report, 2026.* [Report](https://github.com/GAIR-NLP/801-30B/blob/main/report.pdf) · [Project](https://github.com/GAIR-NLP/801-30B)
 
 - **davinci-dev: Agent-native mid-training for software engineering**  
   Ji Zeng, Dayuan Fu, Tiantian Mi, Yumin Zhuang, Yaxing Huang, Xuefeng Li, Lyumanshan Ye, Muhang Xie, Qishuo Hua, Zhen Huang, Mohan Jiang, **Hanning Wang**, Jifan Lin, Yang Xiao, Jie Sun, Yunze Wu, Pengfei Liu.  
