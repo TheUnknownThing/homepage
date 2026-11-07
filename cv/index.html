@@ -396,16 +396,24 @@
             </p>
             <ul>
               <li>
-                <strong>Attention-balanced sampling:</strong> Implemented a
-                sampler that balances attention workloads across data-parallel
-                ranks, achieving 2.26&times; training throughput with 256K
-                context; authored
+                <strong>Efficient long context training:</strong> Implemented
+                efficient long context CP algorithms for DeepSeek V4 and GLM 5.3
+                Flash family; Optimized kernels under long context; Implemented a
+                sampler that balances attention workloads across data-parallel ranks;
+                authored
                 <a
                   href="https://github.com/GAIR-NLP/801-30B/blob/main/report.pdf#page=22"
                   target="_blank"
                   rel="noopener noreferrer"
                   >&sect;7.1 of the technical report</a
                 >.
+              </li>
+              <li>
+                <strong>Training infrastructure:</strong> Worked closely with
+                the pretraining team to investigate training issues and implement
+                features. Worked on model support, kernel optimization, dataloader,
+                VL training implementation, checkpoint export and reviewed related
+                pull requests.
               </li>
               <li>
                 <strong>Data acquisition and retrieval:</strong> Crawled
@@ -416,16 +424,6 @@
                 <strong>Data processing and synthesis:</strong> Built PDF and
                 code data processing and retrieval pipelines, and
                 capability-oriented data synthesis pipelines.
-              </li>
-              <li>
-                <strong>Training infrastructure:</strong> Optimized context
-                parallelism and developed faster training kernels. Worked
-                closely with the pretraining team to investigate training
-                issues and implement features.
-              </li>
-              <li>
-                <strong>Vision-language training:</strong> Contributed
-                dataloader and model support and reviewed related pull requests.
               </li>
             </ul>
           </li>

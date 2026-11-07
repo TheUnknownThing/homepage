@@ -33,11 +33,10 @@ I contributed to [**801-30B-A3B-Base**](https://github.com/GAIR-NLP/801-30B), a 
       <p class="research-experience-advisors">Co-advised by <a href="https://scholar.google.com/citations?user=oIz_CYEAAAAJ&amp;hl=en">Dr. Pengfei Liu</a> and <a href="https://syfeng.net">Dr. Siyuan Feng</a>.</p>
       <p>Building pretraining data pipelines and training infrastructure for thousands of GPUs, with contributions to <a href="https://github.com/GAIR-NLP/801-30B">801-30B-A3B-Base</a>.</p>
       <ul>
-        <li><strong>Attention-balanced sampling:</strong> Implemented a sampler that balances attention workloads across data-parallel ranks, achieving 2.26&times; training throughput with 256K context; authored <a href="https://github.com/GAIR-NLP/801-30B/blob/main/report.pdf#page=22">&sect;7.1 of the technical report</a>.</li>
+        <li><strong>Efficient long context training:</strong> Implemented efficient long context CP algorithms for DeepSeek V4 and GLM 5.3 Flash family; Optimized kernels under long context; Implemented a sampler that balances attention workloads across data-parallel ranks; Authored <a href="https://github.com/GAIR-NLP/801-30B/blob/main/report.pdf#page=22">&sect;7.1 of the technical report</a>.</li>
+        <li><strong>Training infrastructure:</strong> Worked closely with the pretraining team to investigate training issues and implement features. Worked on model support, kernel optimization, dataloader, VL training implementation, checkpoint export and reviewed related pull requests.</li>
         <li><strong>Data acquisition and retrieval:</strong> Crawled hundreds of terabytes of raw PDF data and helped scale the midtraining data retrieval pipeline.</li>
         <li><strong>Data processing and synthesis:</strong> Built PDF and code data processing and retrieval pipelines, and capability-oriented data synthesis pipelines.</li>
-        <li><strong>Training infrastructure:</strong> Optimized context parallelism and developed faster training kernels. Worked closely with the pretraining team to investigate training issues and implement features.</li>
-        <li><strong>Vision-language training:</strong> Contributed dataloader and model support and reviewed related pull requests.</li>
       </ul>
     </div>
   </div>
